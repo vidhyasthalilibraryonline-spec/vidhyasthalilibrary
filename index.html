@@ -8,17 +8,22 @@
   <meta name="keywords" content="free books online, Hindi books free, English classics, Vidhyasthali Library, Barmer library, read free books">
   <meta name="author" content="Vidhyasthali Library">
 
+  <!-- Canonical & SEO -->
+  <link rel="canonical" href="https://www.vidhyasthalilibrary.online/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Vidhyasthali Library — Free Books for Everyone">
   <meta property="og:description" content="Read classic Hindi and English books for free. No signup, no fees. A library built for students in Barmer.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vidhyasthalilibrary.com">
-  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://www.vidhyasthalilibrary.online/">
+  <meta property="og:image" content="https://www.vidhyasthalilibrary.online/images/logo.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Vidhyasthali Library — Free Books for Everyone">
   <meta name="twitter:description" content="Read classic Hindi and English books for free. No signup, no fees.">
+  <meta name="twitter:image" content="https://www.vidhyasthalilibrary.online/images/logo.png">
 
   <!-- Favicon / App Icons -->
   <link rel="icon" type="image/png" href="images/logo.png">
@@ -29,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Critical Inline Fallbacks -->
+  <!-- Critical Inline Fallbacks -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #F5F0E8; color: #4A453E; }
@@ -40,17 +45,20 @@
   </style>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD Structured Data for Google Search & Maps -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Vidhyasthali Library",
-    "url": "https://vidhyasthalilibrary.com",
-    "description": "A free digital library offering classic Hindi and English literature for students in Barmer, Rajasthan.",
-    "publisher": {
-      "@type": "Organization",
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Library",
       "name": "Vidhyasthali Library",
+      "alternateName": "विद्यास्थली लाइब्रेरी बाड़मेर",
+      "url": "https://www.vidhyasthalilibrary.online",
+      "logo": "https://www.vidhyasthalilibrary.online/images/logo.png",
+      "image": "https://www.vidhyasthalilibrary.online/images/library-1.jpg",
+      "description": "Premier digital and physical study library in Barmer, Rajasthan. Offering 100% free digital reading of Hindi literature, NCERT textbooks, and competitive exam PYQ papers.",
+      "telephone": "+91-8107136503",
+      "priceRange": "Free",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Near Sankalp Classes, Laxmi Nagar",
@@ -58,9 +66,33 @@
         "addressRegion": "Rajasthan",
         "postalCode": "344001",
         "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.7532,
+        "longitude": 71.3967
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "06:00",
+          "closes": "23:00"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Vidhyasthali Library",
+      "url": "https://www.vidhyasthalilibrary.online",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.vidhyasthalilibrary.online/browse.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
     }
-  }
+  ]
   </script>
 </head>
 <body>

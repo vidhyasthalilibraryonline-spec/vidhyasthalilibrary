@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vidhyasthalilibrary.com/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.vidhyasthalilibrary.online/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vidhyasthalilibrary.com/browse.html</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.vidhyasthalilibrary.online/browse.html</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vidhyasthalilibrary.com/about.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://www.vidhyasthalilibrary.online/about.html</loc>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vidhyasthalilibrary.com/contact.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <loc>https://www.vidhyasthalilibrary.online/contact.html</loc>
+    <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
