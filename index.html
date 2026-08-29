@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidhyasthali Library — Free Books for Everyone | Barmer</title>
+  <meta name="description" content="A free digital library in Barmer with 12+ classic Hindi and English books you can read right here. No signup. No fees. Just read.">
+  <meta name="keywords" content="free books online, Hindi books free, English classics, Vidhyasthali Library, Barmer library, read free books">
+  <meta name="author" content="Vidhyasthali Library">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vidhyasthali Library — Free Books for Everyone">
+  <meta property="og:description" content="Read classic Hindi and English books for free. No signup, no fees. A library built for students in Barmer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vidhyasthalilibrary.com">
+  <meta property="og:image" content="images/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vidhyasthali Library — Free Books for Everyone">
+  <meta name="twitter:description" content="Read classic Hindi and English books for free. No signup, no fees.">
+
+  <!-- Favicon / App Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Critical Inline Fallbacks -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #F5F0E8; color: #4A453E; }
+    svg { display: inline-block; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    svg:not(.hero-heritage-svg) { width: 1.25rem; height: 1.25rem; max-width: 100%; }
+    .nav-location-badge svg { width: 14px; height: 14px; stroke: #6B2737; }
+    .page-transition { position: fixed; inset: 0; z-index: 9999; background: #F5F0E8; opacity: 0; pointer-events: none; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vidhyasthali Library",
+    "url": "https://vidhyasthalilibrary.com",
+    "description": "A free digital library offering classic Hindi and English literature for students in Barmer, Rajasthan.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vidhyasthali Library",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Sankalp Classes, Laxmi Nagar",
+        "addressLocality": "Barmer",
+        "addressRegion": "Rajasthan",
+        "postalCode": "344001",
+        "addressCountry": "IN"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="page-transition"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Vidhyasthali Library" width="72" height="72" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';">
+        <div>
+          <span class="nav-logo-text">Vidhyasthali</span>
+          <span class="nav-logo-sub">Library · Barmer</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+        <a href="browse.html?type=pyq" data-i18n="nav_pyq">PYQ Papers</a>
+        <a href="browse.html?category=ncert" data-i18n="nav_ncert">NCERT (6–12)</a>
+        <a href="browse.html?category=literature" data-i18n="nav_books">Free Books</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle-btn" aria-label="Toggle language">🌐 हिन्दी</button>
+        <a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener" class="nav-location-badge" title="Visit us in Barmer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_location">Near Sankalp Classes, Laxmi Nagar</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ========== HERO ========== -->
+    <section class="hero paper-bg">
+      <!-- Authentic Barmer Fort & Thar Desert Camel Caravan Low-Shade Silhouette Effect -->
+      <div class="hero-heritage-backdrop" aria-hidden="true">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" class="hero-heritage-svg">
+          <defs>
+            <linearGradient id="duneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="currentColor" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="currentColor" stop-opacity="0.15"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Rolling Desert Dunes with Realistic Wind Ridges -->
+          <path d="M0,230 Q220,185 440,215 T880,190 T1320,210 T1440,195 L1440,320 L0,320 Z" fill="url(#duneGrad)"/>
+          <path d="M0,260 Q280,210 560,245 T1120,225 T1440,240 L1440,320 L0,320 Z" fill="currentColor" opacity="0.4"/>
+
+          <!-- Realistic Thar Desert Camel Caravan -->
+          <!-- Desert Guide with Turban & Walking Staff -->
+          <g opacity="0.85">
+            <!-- Turban & Head -->
+            <ellipse cx="140" cy="216" rx="5" ry="4.5" fill="currentColor"/>
+            <circle cx="138" cy="218" r="3" fill="currentColor"/>
+            <!-- Body / Angrakha -->
+            <path d="M135,221 C135,221 143,221 144,226 L146,242 L133,242 L135,221 Z" fill="currentColor"/>
+            <!-- Legs in motion -->
+            <path d="M136,242 L133,260 L131,260 L134,242 Z" fill="currentColor"/>
+            <path d="M143,242 L146,258 L149,258 L145,242 Z" fill="currentColor"/>
+            <!-- Staff -->
+            <line x1="128" y1="208" x2="128" y2="260" stroke="currentColor" stroke-width="1.8"/>
+            <!-- Lead Rope -->
+            <path d="M144,224 Q162,236 178,172" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.65"/>
+          </g>
+
+          <!-- Camel 1: Lead Dromedary Camel (Realistic Anatomy) -->
+          <g opacity="0.85">
+            <!-- Head & Muzzle -->
+            <path d="M178,170 C180,165 186,162 190,163 C193,164 195,167 194,170 C192,173 188,175 185,178 Z" fill="currentColor"/>
+            <!-- Ears -->
+            <path d="M188,162 L189,158 L191,162 Z" fill="currentColor"/>
+            <!-- S-Curved Neck -->
+            <path d="M185,176 C183,184 186,194 190,198 C194,202 200,202 204,204 L208,214 L198,214 C192,208 178,198 178,186 Z" fill="currentColor"/>
+            <!-- Body, Saddle & Hump -->
+            <path d="M204,204 C206,194 214,180 226,180 C238,180 244,196 248,206 C254,206 264,208 270,214 C274,218 272,228 268,232 L208,232 C204,228 202,216 204,204 Z" fill="currentColor"/>
+            <!-- Front Legs with Knots/Joints -->
+            <path d="M208,230 L206,244 L204,258 L201,258 L204,244 L206,230 Z" fill="currentColor"/>
+            <path d="M216,230 L218,244 L220,258 L223,258 L220,244 L218,230 Z" fill="currentColor"/>
+            <!-- Back Legs with Hock Joint -->
+            <path d="M260,230 L266,242 L262,258 L259,258 L263,243 L256,230 Z" fill="currentColor"/>
+            <path d="M268,230 L274,242 L272,258 L275,258 L277,243 L272,230 Z" fill="currentColor"/>
+            <!-- Tail -->
+            <path d="M272,218 C275,224 275,230 274,236" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <!-- Rope to Camel 2 -->
+            <path d="M268,222 Q290,236 312,176" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.6"/>
+          </g>
+
+          <!-- Camel 2: Following Camel -->
+          <g opacity="0.8">
+            <!-- Head & Muzzle -->
+            <path d="M312,174 C314,169 320,166 324,167 C327,168 329,171 328,174 C326,177 322,179 319,182 Z" fill="currentColor"/>
+            <path d="M322,166 L323,162 L325,166 Z" fill="currentColor"/>
+            <!-- Neck -->
+            <path d="M319,180 C317,188 320,198 324,202 C328,206 334,206 338,208 L342,218 L332,218 C326,212 312,202 312,190 Z" fill="currentColor"/>
+            <!-- Body & Hump -->
+            <path d="M338,208 C340,198 348,184 360,184 C372,184 378,200 382,210 C388,210 398,212 404,218 C408,222 406,232 402,236 L342,236 C338,232 336,220 338,208 Z" fill="currentColor"/>
+            <!-- Legs -->
+            <path d="M342,234 L340,248 L338,260 L335,260 L338,248 L340,234 Z" fill="currentColor"/>
+            <path d="M350,234 L352,248 L354,260 L357,260 L354,248 L352,234 Z" fill="currentColor"/>
+            <path d="M394,234 L400,246 L396,260 L393,260 L397,247 L390,234 Z" fill="currentColor"/>
+            <path d="M402,234 L408,246 L406,260 L409,260 L411,247 L406,234 Z" fill="currentColor"/>
+            <!-- Tail -->
+            <path d="M406,222 C409,228 409,234 408,240" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <!-- Rope to Camel 3 -->
+            <path d="M402,226 Q424,240 446,182" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+          </g>
+
+          <!-- Camel 3: Young Camel -->
+          <g opacity="0.75">
+            <path d="M446,180 C448,175 454,172 458,173 C461,174 463,177 462,180 C460,183 456,185 453,188 Z" fill="currentColor"/>
+            <path d="M453,186 C451,194 454,204 458,208 C462,212 468,212 472,214 L476,224 L466,224 C460,218 446,208 446,196 Z" fill="currentColor"/>
+            <path d="M472,214 C474,204 482,190 494,190 C506,190 512,206 516,216 C522,216 532,218 538,224 C542,228 540,238 536,242 L476,242 C472,238 470,226 472,214 Z" fill="currentColor"/>
+            <path d="M476,240 L474,252 L472,260 L469,260 L472,252 L474,240 Z" fill="currentColor"/>
+            <path d="M484,240 L486,252 L488,260 L491,260 L488,252 L486,240 Z" fill="currentColor"/>
+            <path d="M528,240 L534,250 L530,260 L527,260 L531,251 L524,240 Z" fill="currentColor"/>
+            <path d="M536,240 L542,250 L540,260 L543,260 L545,251 L540,240 Z" fill="currentColor"/>
+            <path d="M540,228 C543,234 543,240 542,246" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          </g>
+
+          <!-- Barmer Hilltop Fort Architecture, Rajput Chhatris & Battlements -->
+          <g opacity="0.8">
+            <!-- Grand Chhatri 1 (Central Rajput Cupola) -->
+            <path d="M720,215 L720,150 L728,150 L728,140 L742,140 L742,130 Q758,102 774,130 L774,140 L788,140 L788,150 L796,150 L796,215 Z" fill="currentColor"/>
+            <!-- Finial / Kalash -->
+            <line x1="758" y1="94" x2="758" y2="108" stroke="currentColor" stroke-width="2.8"/>
+            <circle cx="758" cy="94" r="2.5" fill="currentColor"/>
+            <!-- Open Arch / Jharokha cutout -->
+            <path d="M748,170 Q758,158 768,170 L768,190 L748,190 Z" fill="#FDFBF7" opacity="0.8"/>
+
+            <!-- Fortress Wall & Crenellations -->
+            <path d="M806,215 L806,160 L818,160 L818,150 L834,150 L834,160 L846,160 L846,215 Z" fill="currentColor"/>
+            <path d="M856,215 L856,170 L866,170 L866,160 L880,160 L880,170 L890,170 L890,215 Z" fill="currentColor"/>
+
+            <!-- Grand Chhatri 2 (Distant Rajput Pavilion) -->
+            <path d="M990,215 L990,155 L998,155 L998,145 L1012,145 L1012,135 Q1028,110 1044,135 L1044,145 L1058,145 L1058,155 L1066,155 L1066,215 Z" fill="currentColor"/>
+            <line x1="1028" y1="102" x2="1028" y2="116" stroke="currentColor" stroke-width="2.8"/>
+            <circle cx="1028" cy="102" r="2.5" fill="currentColor"/>
+            <path d="M1018,175 Q1028,163 1038,175 L1038,195 L1018,195 Z" fill="#FDFBF7" opacity="0.8"/>
+
+            <!-- Hilltop Fort Watchtower -->
+            <path d="M1150,215 L1150,145 L1158,145 L1158,135 L1170,135 L1170,125 Q1185,102 1200,125 L1200,135 L1212,135 L1212,145 L1220,145 L1220,215 Z" fill="currentColor"/>
+            <line x1="1185" y1="95" x2="1185" y2="108" stroke="currentColor" stroke-width="2.8"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="hero-content fade-up">
+          <p class="hero-tagline" data-i18n="hero_tagline">Where Silence Meets Success. · Laxmi Nagar, Barmer</p>
+          <h1 data-i18n="hero_title">Where Silence Meets Success.</h1>
+          <p class="hero-desc" data-i18n="hero_desc">Barmer's premier air-conditioned self-study reading hall. 32 private desk cubicles, high-speed WiFi, RO cold water, 24/7 power backup, and complete quiet — built for serious competitive exam aspirants (REET, RAS, CET, SSC, UPSC). Plus 100% free digital books and official papers.</p>
+          <div class="hero-actions">
+            <a href="#study-space" class="btn btn-primary"><span data-i18n="hero_btn_book">Book Your Seat</span> <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            <a href="browse.html" class="btn btn-outline" data-i18n="hero_btn_books">Read Free Books</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h3 data-i18n="stat_desks">32+ Desks</h3>
+              <p data-i18n="stat_desks_label">Study Cubicles</p>
+            </div>
+            <div class="hero-stat">
+              <h3 data-i18n="stat_ac">100% AC</h3>
+              <p data-i18n="stat_ac_label">Air Conditioned</p>
+            </div>
+            <div class="hero-stat">
+              <h3 data-i18n="stat_cctv">24/7 Safe</h3>
+              <p data-i18n="stat_cctv_label">CCTV & WiFi</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-library-showcase fade-up">
+          <div class="showcase-card">
+            <!-- Dual Heritage & Study Space Grid -->
+            <div class="showcase-img-grid">
+              <div class="showcase-img-col">
+                <img src="images/library-1.jpg" alt="Vidhyasthali Air Conditioned Study Hall Barmer">
+                <span class="showcase-img-label">AC Study Hall</span>
+              </div>
+              <div class="showcase-img-col">
+                <img src="images/library-2.jpg" alt="Vidhyasthali Barmer Library Entrance">
+              </div>
+              <div class="showcase-live-badge">
+                <span class="pulse-dot"></span> Open Today: 6 AM – 11 PM
+              </div>
+            </div>
+
+            <div class="showcase-body">
+              <!-- Barmer #1 Most Trusted Brand Seal -->
+              <div class="showcase-top-banner">
+                <div class="showcase-brand-trust">
+                  <span class="trust-highlight">Barmer's #1 Library</span>
+                  <span class="trust-subtext">Most Trusted Self-Study Space</span>
+                </div>
+              </div>
+
+              <div class="showcase-title-row">
+                <h3>Vidhyasthali Reading Hall</h3>
+              </div>
+              <p class="showcase-caption">Officially owned study facility in Laxmi Nagar with 32+ individual cabin cubicles, pin-drop silence, climate control & high-speed 5G WiFi.</p>
+
+              <!-- Clean text chips (No AI Emojis) -->
+              <div class="showcase-pills">
+                <span class="sc-pill">100% Air Conditioned</span>
+                <span class="sc-pill">High-Speed 5G WiFi</span>
+                <span class="sc-pill">32 Private Desks</span>
+                <span class="sc-pill">Chilled RO Water</span>
+                <span class="sc-pill">24/7 Power Backup</span>
+                <span class="sc-pill">Free Official PYQs</span>
+              </div>
+
+              <div class="showcase-action-row">
+                <a href="tel:+918107136503" class="btn btn-primary" style="padding:10px 18px; font-size:0.82rem; flex:1; justify-content:center;">
+                  Book Desk: 8107136503
+                </a>
+                <a href="#study-space" class="btn btn-outline" style="padding:10px 16px; font-size:0.82rem;">
+                  View Amenities ↓
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SELF STUDY SPACE & SEAT BOOKING ========== -->
+    <section class="bg-cream" id="study-space">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label" data-i18n="study_badge">गंभीर विद्यार्थियों के लिए विशेष स्थान</span>
+          <h2 class="section-title" data-i18n="study_title">पूर्ण शांति और अध्ययन का सर्वश्रेष्ठ माहौल</h2>
+          <p class="section-desc" data-i18n="study_desc">घर पर पढ़ाई में व्यवधान? यहाँ आपको मिलता है बिना किसी शोर का समर्पित अध्ययन डेस्क। REET, RAS, CET, SSC, Banking, Defense, NEET, JEE एवं बोर्ड परीक्षाओं की तैयारी हेतु पूर्ण वातानुकूलित केंद्र।</p>
+        </div>
+
+        <div class="amenities-grid stagger">
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path></svg>
+            </div>
+            <h4 data-i18n="feat_ac_title">पूर्ण वातानुकूलित (AC) हॉल</h4>
+            <p data-i18n="feat_ac_desc">बाड़मेर की गर्मी में भी शांत और शीतल वातावरण ताकि आप बिना थके लगातार पढ़ सकें।</p>
+          </div>
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><circle cx="12" cy="20" r="1"></circle></svg>
+            </div>
+            <h4 data-i18n="feat_wifi_title">हाई-स्पीड 5G वाईफाई</h4>
+            <p data-i18n="feat_wifi_desc">ऑनलाइन क्लासेज, वीडियो लेक्चर और पीडीएफ डाउनलोड के लिए बिना रुकावट इंटरनेट।</p>
+          </div>
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <h4 data-i18n="feat_power_title">24 घंटे पावर बैकअप</h4>
+            <p data-i18n="feat_power_desc">इनवर्टर और जनरेटर बैकअप — लाइट जाने पर भी आपकी पढ़ाई कभी नहीं रुकेगी।</p>
+          </div>
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            </div>
+            <h4 data-i18n="feat_ro_title">आरओ शीतल पेयजल</h4>
+            <p data-i18n="feat_ro_desc">साफ और ठंडा आरओ का पानी हर समय उपलब्ध।</p>
+          </div>
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h4 data-i18n="feat_desk_title">व्यक्तिगत स्टडी क्यूबिकल</h4>
+            <p data-i18n="feat_desk_desc">आरामदायक कुर्सी, व्यक्तिगत चार्जिंग सॉकेट और सेपरेट स्टडी लाइट।</p>
+          </div>
+          <div class="amenity-card fade-up">
+            <div class="amenity-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4 data-i18n="feat_cctv_title">सीसीटीवी निगरानी व शांति</h4>
+            <p data-i18n="feat_cctv_desc">पूर्ण अनुशासन और शांत अध्ययन का सख्त नियम।</p>
+          </div>
+        </div>
+
+        <!-- Seat Reservation Card -->
+        <div class="seat-booking-card fade-up">
+          <div class="seat-booking-left">
+            <span class="seat-badge" data-i18n="book_card_badge">सीट आरक्षण</span>
+            <h3 data-i18n="book_card_title">अपनी समर्पित अध्ययन सीट बुक करें</h3>
+            <p data-i18n="book_card_desc">सीटें सीमित हैं (कुल 32 डेस्क)। अपनी पसंद की शिफ्ट (सुबह / दोपहर / शाम / फुल डे) आरक्षित करने के लिए अभी कॉल करें या व्हाट्सएप करें。</p>
+            <div class="seat-features-inline">
+              <span>✓ सेपरेट केबिन डेस्क</span>
+              <span>✓ आरओ वाटर</span>
+              <span>✓ 5G वाईफाई</span>
+              <span>✓ साइलेंट जोन</span>
+            </div>
+          </div>
+          <div class="seat-booking-right">
+            <p class="seat-contact-label" data-i18n="book_card_call">सीट बुक करने के लिए कॉल करें:</p>
+            <a href="tel:+918107136503" class="seat-contact-phone">8107136503</a>
+            <a href="tel:+918005513494" class="seat-contact-phone" style="font-size:1.5rem; margin-bottom:20px;">8005513494</a>
+            <p style="font-size:0.8rem; color:rgba(255,255,255,0.7); margin-bottom:0;" data-i18n="book_card_hours">समय: प्रतिदिन प्रातः 6:00 बजे से रात्रि 11:00 बजे तक</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== FEATURED BOOKS ========== -->
+    <section class="bg-cream">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Staff Picks</span>
+          <h2 class="section-title">Books We Keep Coming Back To</h2>
+          <p class="section-desc">Hand-picked by our team. Each one earned its place here.</p>
+        </div>
+        <div class="featured-grid stagger" id="featuredGrid">
+          <!-- Filled by JS -->
+        </div>
+        <div class="text-center fade-up" style="margin-top: 48px;">
+          <a href="browse.html" class="btn btn-outline">View all books <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== DIGITAL STUDY VAULT CATEGORIES ========== -->
+    <section class="paper-bg">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label" data-i18n="vault_spotlight_badge">100% Free &amp; Official Releases</span>
+          <h2 class="section-title" data-i18n="vault_spotlight_title">Digital Study Vault &amp; Exam Papers</h2>
+          <p class="section-desc" data-i18n="vault_spotlight_desc">Official question papers, official syllabi, and NCERT foundation books with zero fees and no login required.</p>
+        </div>
+        <div class="genres-grid stagger">
+          <a href="browse.html?category=rpsc" class="genre-card fade-up">
+            <span class="genre-icon">RPSC</span>
+            <h4 data-i18n="cat_rpsc">RPSC &amp; Rajasthan</h4>
+            <p data-i18n="cat_rpsc_sub">RAS, REET, CET, SI, Patwar</p>
+          </a>
+          <a href="browse.html?category=upsc" class="genre-card fade-up">
+            <span class="genre-icon">UPSC</span>
+            <h4 data-i18n="cat_upsc">यूपीएससी सिविल सेवा</h4>
+            <p data-i18n="cat_upsc_sub">प्रारंभिक जीएस, सीसैट व मुख्य परीक्षा</p>
+          </a>
+          <a href="browse.html?category=ncert" class="genre-card fade-up">
+            <span class="genre-icon">NCERT</span>
+            <h4 data-i18n="cat_ncert">एनसीईआरटी पुस्तकें (6–12)</h4>
+            <p data-i18n="cat_ncert_sub">इतिहास, राजनीति, भूगोल, विज्ञान</p>
+          </a>
+          <a href="browse.html?category=ssc" class="genre-card fade-up">
+            <span class="genre-icon">SSC</span>
+            <p>CGL, CHSL, GD &amp; CPO Papers</p>
+          </a>
+          <a href="browse.html?category=neet_jee" class="genre-card fade-up">
+            <span class="genre-icon">NEET</span>
+            <h4>NEET &amp; JEE Main</h4>
+            <p>Official NTA Papers &amp; Answer Keys</p>
+          </a>
+          <a href="browse.html" class="genre-card fade-up">
+            <span class="genre-icon">VAULT</span>
+            <h4>All Materials</h4>
+            <p>View complete 35+ papers &amp; books</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="bg-cream">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">How It Works</span>
+          <h2 class="section-title">Three Steps. No Catches.</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-item fade-up">
+            <div class="step-number">01</div>
+            <h4>Pick a book</h4>
+            <p>Browse our catalog of Hindi and English classics. Every book is public domain and legal to read.</p>
+          </div>
+          <div class="step-item fade-up">
+            <div class="step-number">02</div>
+            <h4>Read it here</h4>
+            <p>Open the book right on this site. No downloads, no redirects. The reader works on any device.</p>
+          </div>
+          <div class="step-item fade-up">
+            <div class="step-number">03</div>
+            <h4>It's free, forever</h4>
+            <p>No account needed. No trial period. These books belong to everyone and always will.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========== LIVE BANNER ========== -->
+    <div class="live-banner">
+      <div class="container">
+        <p><span class="live-dot"></span> <strong>Right now</strong>, students across Barmer are reading. Most popular this week: <strong>गोदान</strong> by प्रेमचंद</p>
+      </div>
+    </div>
+
+
+    <!-- ========== ABOUT TEASER ========== -->
+    <section class="paper-bg">
+      <div class="container">
+        <div class="about-teaser">
+          <div class="about-teaser-img fade-up">
+            <img src="images/library-1.jpg" alt="Students studying at Vidhyasthali Library" loading="lazy">
+          </div>
+          <div class="fade-up">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">A Permanent Study Sanctuary in Barmer</h2>
+            <blockquote>"We built Vidhyasthali Library to give every student in Barmer a quiet, air-conditioned haven where their ambition can turn into achievement."</blockquote>
+            <p style="color: var(--stone); margin-top: 20px; line-height: 1.8;">Located in our officially owned premises near Sankalp Classes in Laxmi Nagar, we provide 32+ private desk cubicles with full AC, high-speed WiFi, and pin-drop silence. Plus a free digital library accessible to all learners.</p>
+            <a href="about.html" class="btn btn-outline" style="margin-top: 24px;">Read Our Story <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 20px;">
+            <img src="images/logo.png" alt="Vidhyasthali Library" width="48" height="48" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';" style="height:48px;">
+            <div>
+              <span class="nav-logo-text" style="color:var(--white);">Vidhyasthali</span>
+              <span class="nav-logo-sub" style="color:var(--brass-light);">Library · Barmer</span>
+            </div>
+          </div>
+          <p>A quiet space for focused study in Barmer. Free books for everyone, online and offline.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer_pages">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="browse.html?type=pyq" data-i18n="nav_pyq">PYQ Papers</a></li>
+            <li><a href="browse.html?category=ncert" data-i18n="nav_ncert">NCERT (6–12)</a></li>
+            <li><a href="browse.html?category=literature" data-i18n="nav_books">Free Books</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer_reach">Contact Us</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+918107136503">8107136503</a></li>
+            <li><a href="tel:+918005513494">8005513494</a></li>
+            <li><a href="mailto:vidhyasthalilibraryonline@gmail.com">vidhyasthalilibraryonline@gmail.com</a></li>
+            <li><a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener">📍 Near Sankalp Classes, Laxmi Nagar, Barmer ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">&copy; 2026 Vidhyasthali Library, Barmer. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/books.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script>
+    // Load featured books on homepage (works with local files & web servers)
+    document.addEventListener('DOMContentLoaded', function () {
+      function renderFeatured(books) {
+        var grid = document.getElementById('featuredGrid');
+        if (!grid || grid.dataset.loaded === 'true') return;
+        grid.dataset.loaded = 'true';
+        grid.innerHTML = '';
+        var picks = books.filter(function (b) { return b.featured; });
+        picks.forEach(function (book) {
+          var card = document.createElement('a');
+          card.href = 'read.html?id=' + book.id;
+          card.className = 'book-card fade-up visible';
+          var langClass = (book.language || '').toLowerCase();
+          card.innerHTML =
+            '<div class="book-cover-wrap">' +
+              renderBookCoverHTML(book) +
+              '<span class="book-language ' + langClass + '">' + book.language + '</span>' +
+            '</div>' +
+            '<h4>' + book.title + '</h4>' +
+            '<p class="book-author">' + book.author + '</p>' +
+            '<p class="curator-note">"' + (book.curatorNote || book.description || '') + '"</p>';
+          grid.appendChild(card);
+        });
+
+        // Observe for scroll animation if any unobserved
+        if ('IntersectionObserver' in window) {
+          var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1 });
+          grid.querySelectorAll('.fade-up').forEach(function (el) { obs.observe(el); });
+        }
+      }
+
+      if (window.LIBRARY_BOOKS && window.LIBRARY_BOOKS.length) {
+        renderFeatured(window.LIBRARY_BOOKS);
+      } else {
+        fetch('data/books.json')
+          .then(function (r) { return r.json(); })
+          .then(renderFeatured)
+          .catch(function () {
+            if (window.LIBRARY_BOOKS) renderFeatured(window.LIBRARY_BOOKS);
+          });
+      }
+    });
+  </script>
+</body>
+</html>

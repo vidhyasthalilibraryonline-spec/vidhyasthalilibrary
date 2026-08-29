@@ -1,0 +1,17 @@
+# Ignore deployment zips & temporary python scripts
+*.zip
+temp_*
+*.log
+.DS_Store
+
+# Python build scripts (not needed for website)
+*.py
+
+# Temp test PDFs in root
+test_*.pdf
+temp_*.pdf
+
+# PDFs over 100MB (GitHub limit) 
+pdfs/jee-main-2024-paper.pdf
+pdfs/ncert-class9-science.pdf
+pdfs/

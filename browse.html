@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Books — Free Hindi &amp; English Classics | Vidhyasthali Library</title>
+  <meta name="description" content="Browse our free collection of Hindi and English books. Filter by genre, search by title or author, and start reading instantly.">
+
+  <meta property="og:title" content="Browse Free Books — Vidhyasthali Library">
+  <meta property="og:description" content="12+ classic books in Hindi and English. Browse, pick, and read for free.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon / App Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Critical Inline Fallbacks -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #F5F0E8; color: #4A453E; }
+    svg { display: inline-block; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    svg:not(.hero-heritage-svg) { width: 1.25rem; height: 1.25rem; max-width: 100%; }
+    .nav-location-badge svg { width: 14px; height: 14px; stroke: #6B2737; }
+    .page-transition { position: fixed; inset: 0; z-index: 9999; background: #F5F0E8; opacity: 0; pointer-events: none; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Vidhyasthali Library" width="72" height="72" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';">
+        <div>
+          <span class="nav-logo-text">Vidhyasthali</span>
+          <span class="nav-logo-sub">Library · Barmer</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="browse.html?type=pyq" data-i18n="nav_pyq">PYQ Papers</a>
+        <a href="browse.html?category=ncert" data-i18n="nav_ncert">NCERT (6–12)</a>
+        <a href="browse.html?category=literature" data-i18n="nav_books">Free Books</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle-btn" aria-label="Toggle language">🌐 हिन्दी</button>
+        <a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener" class="nav-location-badge" title="Visit us in Barmer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_location">Near Sankalp Classes, Laxmi Nagar</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section style="padding-top: 130px; padding-bottom: 80px;">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label" data-i18n="vault_page_badge">Official Exam Papers &amp; NCERT Vault</span>
+          <h1 class="section-title" data-i18n="vault_page_title">Digital Study Vault</h1>
+          <p class="section-desc" data-i18n="vault_page_desc">100% legal official previous papers, official syllabi, NCERT foundation books (Classes 6–12), and classic literature. Free for every student in Barmer and beyond.</p>
+        </div>
+
+        <!-- Controls: Category Tabs + Subfilters + Search -->
+        <div class="vault-header-bar fade-up">
+          <div class="vault-category-tabs" id="categoryTabs">
+            <button class="vault-tab active" data-category="all"><span data-i18n="tab_all">All Materials</span> <span class="vault-tab-count" id="countAll">0</span></button>
+            <button class="vault-tab" data-category="rpsc"><span data-i18n="tab_rpsc">RPSC &amp; Rajasthan</span> <span class="vault-tab-count" id="countRpsc">0</span></button>
+            <button class="vault-tab" data-category="upsc"><span data-i18n="tab_upsc">UPSC Civil Services</span> <span class="vault-tab-count" id="countUpsc">0</span></button>
+            <button class="vault-tab" data-category="ncert"><span data-i18n="tab_ncert">NCERT Classes 6–12</span> <span class="vault-tab-count" id="countNcert">0</span></button>
+            <button class="vault-tab" data-category="ssc"><span data-i18n="tab_ssc">SSC Exams</span> <span class="vault-tab-count" id="countSsc">0</span></button>
+            <button class="vault-tab" data-category="neet_jee"><span data-i18n="tab_neet">NEET &amp; JEE</span> <span class="vault-tab-count" id="countNeet">0</span></button>
+            <button class="vault-tab" data-category="banking"><span data-i18n="tab_banking">Banking Exams</span> <span class="vault-tab-count" id="countBanking">0</span></button>
+            <button class="vault-tab" data-category="literature"><span data-i18n="tab_lit">Classic Books</span> <span class="vault-tab-count" id="countLit">0</span></button>
+          </div>
+
+          <!-- Responsive NCERT Class Slider -->
+          <div class="ncert-slider-wrapper" id="ncertSliderWrapper" style="display: none;">
+            <div class="ncert-slider-label">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span>NCERT Classes:</span>
+            </div>
+            <button class="slider-nav-btn" id="sliderBtnLeft" aria-label="Scroll left"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+            <div class="ncert-slider-track" id="ncertSliderTrack">
+              <button class="ncert-class-chip active" data-class="all">All Classes (6–12)</button>
+              <button class="ncert-class-chip" data-class="class6">Class 6</button>
+              <button class="ncert-class-chip" data-class="class7">Class 7</button>
+              <button class="ncert-class-chip" data-class="class8">Class 8</button>
+              <button class="ncert-class-chip" data-class="class9">Class 9</button>
+              <button class="ncert-class-chip" data-class="class10">Class 10</button>
+              <button class="ncert-class-chip" data-class="class11">Class 11</button>
+              <button class="ncert-class-chip" data-class="class12">Class 12</button>
+            </div>
+            <button class="slider-nav-btn" id="sliderBtnRight" aria-label="Scroll right"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+          </div>
+
+          <div class="vault-subfilters">
+            <div class="vault-type-pills" id="typePills">
+              <button class="vault-pill active" data-type="all" data-i18n="pill_all_types">All Types</button>
+              <button class="vault-pill" data-type="pyq" data-i18n="pill_pyq">Question Papers (PYQ)</button>
+              <button class="vault-pill" data-type="syllabus" data-i18n="pill_syllabus">Official Syllabus</button>
+              <button class="vault-pill" data-type="textbook" data-i18n="pill_textbook">NCERT Books</button>
+              <button class="vault-pill" data-type="book" data-i18n="pill_literature">Literature</button>
+            </div>
+            <div class="search-bar">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="searchInput" placeholder="Search by exam, subject, class, year or title..." data-i18n-placeholder="search_placeholder">
+            </div>
+          </div>
+        </div>
+
+        <!-- Vault Cards Grid -->
+        <div class="vault-grid" id="vaultGrid">
+          <div class="reader-loading">Loading official materials...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 20px;">
+            <img src="images/logo.png" alt="Vidhyasthali Library" width="48" height="48" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';" style="height:48px;">
+            <div>
+              <span class="nav-logo-text" style="color:var(--white);">Vidhyasthali</span>
+              <span class="nav-logo-sub" style="color:var(--brass-light);">Library · Barmer</span>
+            </div>
+          </div>
+          <p>A quiet space for focused study in Barmer. Free books for everyone, online and offline.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer_pages">मुख्य पृष्ठ</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">होम</a></li>
+            <li><a href="browse.html" data-i18n="nav_pyq">पुराने पेपर (PYQ)</a></li>
+            <li><a href="about.html" data-i18n="nav_about">हमारे बारे में</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">संपर्क करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer_reach">संपर्क विवरण</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+918107136503">8107136503</a></li>
+            <li><a href="tel:+918005513494">8005513494</a></li>
+            <li><a href="mailto:vidhyasthalilibraryonline@gmail.com">vidhyasthalilibraryonline@gmail.com</a></li>
+            <li><a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener">📍 संकल्प क्लासेज के पास, लक्ष्मीनगर, बाड़मेर ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">&copy; 2026 विद्यास्थली लाइब्रेरी, बाड़मेर। सर्वाधिकार सुरक्षित।</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/vault.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/browse.js"></script>
+</body>
+</html>

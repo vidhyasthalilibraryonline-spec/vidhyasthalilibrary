@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read — Vidhyasthali Library</title>
+  <meta name="description" content="Read this book for free on Vidhyasthali Library. Powered by the Internet Archive.">
+
+  <meta property="og:title" content="Read Free — Vidhyasthali Library">
+  <meta property="og:description" content="Read classic books for free, right in your browser.">
+  <meta property="og:type" content="book">
+
+  <!-- Favicon / App Icons -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Critical Inline Fallbacks -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #F5F0E8; color: #4A453E; }
+    svg { display: inline-block; vertical-align: middle; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    svg:not(.hero-heritage-svg) { width: 1.25rem; height: 1.25rem; max-width: 100%; }
+    .nav-location-badge svg { width: 14px; height: 14px; stroke: #6B2737; }
+    .page-transition { position: fixed; inset: 0; z-index: 9999; background: #F5F0E8; opacity: 0; pointer-events: none; }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="page-transition"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Vidhyasthali Library" width="72" height="72" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';">
+        <div>
+          <span class="nav-logo-text">Vidhyasthali</span>
+          <span class="nav-logo-sub">Library · Barmer</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="browse.html?type=pyq" data-i18n="nav_pyq">PYQ Papers</a>
+        <a href="browse.html?category=ncert" data-i18n="nav_ncert">NCERT (6–12)</a>
+        <a href="browse.html?category=literature" data-i18n="nav_books">Free Books</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="lang-toggle-btn" aria-label="Toggle language">🌐 English</button>
+        <a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener" class="nav-location-badge" title="Visit us in Barmer">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span data-i18n="nav_location">संकल्प क्लासेज के पास, बाड़मेर</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section style="padding-top: 100px; padding-bottom: 60px;">
+      <div class="container">
+        <a href="browse.html" class="reader-back fade-up">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          Back to catalog
+        </a>
+
+        <div class="reader-layout">
+          <!-- Sidebar -->
+          <div class="reader-sidebar fade-up">
+            <div class="reader-cover" id="readerCover">
+              <div class="reader-loading">Loading...</div>
+            </div>
+            <div class="reader-meta">
+              <h1 id="readerTitle"></h1>
+              <p class="author" id="readerAuthor"></p>
+              <div class="meta-row" id="readerMeta"></div>
+              <p id="readerDesc" style="font-size: 0.9rem; color: var(--stone); line-height: 1.7;"></p>
+              <div class="curator-note" id="readerCurator"></div>
+              <div id="readerActions"></div>
+            </div>
+          </div>
+
+          <!-- Embedded Reader -->
+          <div class="reader-main fade-up" id="readerEmbed">
+            <div class="reader-loading">Loading book reader...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 20px;">
+            <img src="images/logo.png" alt="Vidhyasthali Library" width="48" height="48" onerror="this.onerror=null;this.src='vidhyasthali_library_logo_transparent.png';" style="height:48px;">
+            <div>
+              <span class="nav-logo-text" style="color:var(--white);">Vidhyasthali</span>
+              <span class="nav-logo-sub" style="color:var(--brass-light);">Library · Barmer</span>
+            </div>
+          </div>
+          <p>A quiet space for focused study in Barmer. Free books for everyone, online and offline.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer_pages">मुख्य पृष्ठ</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">होम</a></li>
+            <li><a href="browse.html" data-i18n="nav_pyq">पुराने पेपर (PYQ)</a></li>
+            <li><a href="about.html" data-i18n="nav_about">हमारे बारे में</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">संपर्क करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer_reach">संपर्क विवरण</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+918107136503">8107136503</a></li>
+            <li><a href="tel:+918005513494">8005513494</a></li>
+            <li><a href="mailto:vidhyasthalilibraryonline@gmail.com">vidhyasthalilibraryonline@gmail.com</a></li>
+            <li><a href="https://www.google.com/search?kgmid=/g/11zkxxtzs7&hl=hi-IN&q=Vidhyasthali+Library" target="_blank" rel="noopener">📍 संकल्प क्लासेज के पास, लक्ष्मीनगर, बाड़मेर ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_rights">&copy; 2026 विद्यास्थली लाइब्रेरी, बाड़मेर। सर्वाधिकार सुरक्षित।</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/vault.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/reader.js"></script>
+</body>
+</html>
